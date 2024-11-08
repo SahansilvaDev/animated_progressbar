@@ -1,0 +1,104 @@
+/* ----Reset Styles---- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* ----Body Styling---- */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0 20px;
+    background: #f4f4f4;
+}
+
+/* ----Wrapper Styling---- */
+.skill-wrapper {
+    max-width: 600px;
+    width: 100%;
+    padding: 40px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.skill-wrapper h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* ----Skill Section Styling---- */
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill h2 {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+/* ----Progress Bar Styling---- */
+.progress-bar {
+    width: 100%;
+    height: 30px;
+    background: #e0e0e0;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/* ----Animated Progress Bars---- */
+.progress {
+    height: 100%;
+    line-height: 30px;
+    font-size: 0.9rem;
+    color: #fff;
+    text-align: center;
+    border-radius: 15px;
+    transition: width 0.6s ease;
+    animation: fillBar 2s ease-in-out forwards;
+}
+
+/* ----Keyframes for Animation---- */
+@keyframes fillBar {
+    0% { width: 0; }
+    100% { width: var(--width); }
+}
+
+/* ----Individual Progress Widths and Colors---- */
+.l1 {
+    background: #3498db;
+    --width: 100%;
+}
+
+.l2 {
+    background: #e67e22;
+    --width: 80%;
+}
+
+.l3 {
+    background: #9b59b6;
+    --width: 70%;
+}
+
+.l4 {
+    background: #2ecc71;
+    --width: 90%;
+}
+
+.l5 {
+    background: #f1c40f;
+    --width: 80%;
+}
+
+/* ----Hover Effect for Progress Bars---- */
+.progress-bar:hover .progress {
+    filter: brightness(1.1);
+}
